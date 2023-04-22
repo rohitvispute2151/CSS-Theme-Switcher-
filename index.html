@@ -6,9 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Theme Switcher</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&family=Padauk:wght@400;700&family=Roboto+Condensed:wght@700&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <nav>
+        <ul class="navbar">
+            <li class="navitem">Drivers</li>
+            <li class="navitem">Teams</li>
+            <li class="navitem">Login</li>
+
+            <!-- Drop Downs -->
+
+            <li class="navitem has-dropDown">
+                <a class="theme">Theme</a> 
+                <ul class="theme-dropdown">
+                    <li class="dropDown"><button  class="Light-link">Light</button></li>
+                    <li class="dropDown"><button  class="Dark-link">Dark</button></li>
+                    <li class="dropDown"><button  class="Neon-link">Neon</button></li>
+                </ul>   
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="../f1.png" alt="">
+        <h1>Formula 1</h1>
+    </header>
+
+    <main>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla eos sunt temporibus mollitia molestias ipsam, a, accusantium assumenda fugit sit placeat doloremque quaerat aliquid, sequi tenetur harum labore voluptas corporis autem sapiente nihil veritatis! Aliquam culpa sint assumenda, adipisci voluptatem illum ad, alias, pariatur aspernatur dicta accusantium suscipit dolores doloremque eaque blanditiis? Temporibus, molestiae voluptatem!
+
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, tenetur? Aut voluptate accusantium explicabo hic nam maxime nemo esse ut neque quae iusto consequatur, blanditiis eveniet praesentium possimus eligendi veritatis perferendis cupiditate amet sapiente inventore minima? Quis asperiores reprehenderit dolore, sit commodi possimus quia vel molestiae assumenda voluptatum quasi rem.
+    </main>
+    <script src="app.js"></script>
+
 </body>
 </html>

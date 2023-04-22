@@ -1,0 +1,117 @@
+:root{
+    --gray1 : #f8f9fa;
+    --gray2 : #dee2e6;
+    --gray3 : #adb5bd;
+    --gray4 : #6c757d;
+    --gray5 : #343a40;
+    --black :#000000;
+    --navy : #14213d;
+    --white : #ffffff;
+    --yellow : #fca311;
+    --neon1 : #f20089;
+    --neon2 : #d100d1;
+    --neon3 : #2d00f7;
+}
+.light{
+    --bg: var(--gray1);
+    --text : var(--black);
+    --navbar : var(--gray1);
+    --navtext : var(--black);
+}
+
+.dark{
+    --bg: var(--gray5);
+    --text : var(--gray1);
+    --navbar : var(--gray5);
+    --navtext : #f8f9fa;
+}
+.neon{
+    --bg: var(--neon3);
+    --text : var(--neon2);
+    --navbar : var(--black);
+    --navtext : var(--gray1);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Padauk', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    padding: 50px;
+    margin-top: 2.5rem;
+    width: 75%;
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    background-color: var(--bg);
+    height: 65px;
+    width: 100%;
+    color: var(--navtext);
+}
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+.navbar{
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+}
+header{
+    background-color: white;
+    padding: 2rem;
+    padding-bottom: 4.5rem;
+    text-align: center;
+    clip-path: polygon( 50% 0%, 100% 0%, 100% 65%, 50% 100%, 0 65%,0 0 );
+}
+header img{
+    width: 25%;
+}
+.theme-dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 500px;
+    background-color: #6d6875;
+    padding: 10px;
+    visibility: hidden;
+    margin-top: 1.25rem;
+    right: 100px;
+    position: absolute;
+    z-index: 2;
+    height: 2rem;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    transition: visibility  0.15s ease-out;
+}
+.dropDown::before{
+    content: " ";
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.has-dropDown:hover .theme-dropdown{
+    visibility: visible;
+}
+button{
+    background-color: transparent;
+    border: none;
+}
